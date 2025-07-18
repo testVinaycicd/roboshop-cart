@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "RD*"
+      - "rd*"
       - "!main"
 jobs:
   common:
