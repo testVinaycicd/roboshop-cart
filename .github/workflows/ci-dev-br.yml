@@ -1,0 +1,13 @@
+name: Ci Dev Branch
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "RD*"
+      - "!main"
+jobs:
+  common:
+    uses: testVinaycicd/github-resuable-actions/.github/workflows/ci-dev-br.yml@main
+    with:
+      component_name: cart
+      app_type: nodejs
