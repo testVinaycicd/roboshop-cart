@@ -157,7 +157,7 @@ app.get('/add/:id/:sku/:qty', (req, res) => {
                     cart = JSON.parse(data);
                 }
                 req.log.info('got cart', cart);
-                // add sku to cart
+                // add sku to car t
                 var item = {
                     qty: qty,
                     sku: req.params.sku,
