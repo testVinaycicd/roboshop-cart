@@ -197,7 +197,7 @@ app.get('/update/:id/:sku/:qty', (req, res) => {
         return;
     } else if(qty < 0) {
         req.log.warn('quantity less than zero');
-        res.status(400).send('negative quantity not allowed');
+        res.status(400).send('negative quantity  not allowed');
         return;
     }
 
